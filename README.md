@@ -32,7 +32,7 @@ Before you begin, familiarize yourself with the FixedArray class and its specs. 
 
 ## Release 1: Array List
 
-First we're going to create a concrete implementation of the List data type known as an _ArrayList_. The details are in [array_list.md]("./array_list.md").
+First we're going to create a concrete implementation of the List data type known as an _ArrayList_. The details are in [array_list.md](array_list.md).
 
 ## Release 2: Linked List
 
@@ -40,7 +40,7 @@ Now we're going to take a very different approach to building a List by building
 
 Unlike the `ArrayList`, our `LinkedList` will not use a `FixedArray` or normal Array at all! It achieves the same _goal_ as `ArrayList`, but in a very different way.
 
-You'll find the details in [linked_list.md]("./linked_list.md").
+You'll find the details in [linked_list.md](linked_list.md).
 
 ## Release 3
 
