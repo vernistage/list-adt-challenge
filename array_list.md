@@ -37,7 +37,9 @@ RSpec tests have been provided in `spec/array_list_spec.rb`. Let them guide you,
 
 ## Release 2: Insert
 
-Sometimes we want to be able to insert an element into the middle of a list. Implement and test `ArrayList#insert(position, element)`. `#insert` should insert the value `element` in the List at position `position`.  If the position you're trying to insert at is larger than the number of things in the list, throw an `OutofBoundsError`.
+Sometimes we want to be able to insert an element into the middle of a list. Implement and test `ArrayList#insert(position, element)`.
+
+`#insert` should insert the value `element` in the List at position `position`. When `position` != 0 and no element exists at `position`, throw an `OutOfBounds` error. Inserting at `position` 0 should always succeed, even if there are no elements in the list.
 
 ## Stretch: Growth strategies
 

@@ -60,4 +60,5 @@ Notice that the methods you're building here are _identical_ to the methods you 
 - `LinkedList#first()`: Return the first element in the list, throw `NoSuchElementError` if the list is empty.
 - `LinkedList#last()`: Return the last element in the list, throw `NoSuchElementError` if the list is empty.
 - `LinkedList#length()`: Return the number of items that have been added to the list so far.
-- `LinkedList#insert(position, element)`. `#insert` should insert the value `element` in the List at position `position`.  If the position you're trying to insert at is larger than the number of things in the list, throw an `OutofBoundsError`.
+
+- `LinkedList#insert(position, element)`. `#insert` should insert the value `element` in the List at position `position`. When `position` != 0 and no element exists at `position`, throw an `OutOfBounds` error. Inserting at `position` 0 should always succeed, even if there are no elements in the list.
