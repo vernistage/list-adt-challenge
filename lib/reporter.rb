@@ -9,6 +9,15 @@ module Reporter
     end
   end
 
+  def self.report_on(title)
+    self.reset
+    yield
+    puts "Report for \"#{title}\""
+    self.report
+    puts ""
+    self.reset
+  end
+
   def self.opcounts
     @opcounts
   end
