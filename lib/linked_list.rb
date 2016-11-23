@@ -26,7 +26,7 @@ class LinkedList
   end
 
   def set(position, new_element)
-    raise NoSuchElementError if out_of_bounds?(position)
+    raise NoSuchElementError if length != 0 && out_of_bounds?(position)
     find(position).element = new_element
     new_element
   end
@@ -42,11 +42,13 @@ class LinkedList
   end
 
   def insert(position, element)
-    raise OutOfBoundsError if out_of_bounds?(position)
     new_node = Node.new(element)
+
     if position == 0
       new_node.next = head
       self.head = new_node
+    elsif out_of_bounds?(position)
+      raise OutOfBoundsError
     else
       node_before_insert = find(position-1)
       node_at_insert = node_before_insert.next

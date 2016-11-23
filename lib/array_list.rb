@@ -5,7 +5,7 @@ class ArrayList
   attr_reader :length
 
   def initialize
-    @fixed_array = FixedArray.new(8)
+    @fixed_array = FixedArray.new(2)
     @length = 0
   end
 
@@ -24,21 +24,25 @@ class ArrayList
   end
 
   def set(index, value)
-    raise NoSuchElementError if index >= length
+    if length != 0 && index >= length
+      raise NoSuchElementError
+    end
     fixed_array.set(index, value)
   end
 
   def insert(index, value)
-    raise OutOfBoundsError if index >= length
+    if length != 0 && index >= length
+      raise OutOfBoundsError
+    end
     expand_array_capacity if length == fixed_array.size
 
-    last_index.downto(index).each do |i|
-      fixed_array.set(i+1, get(i))
+    (length-1).downto(index) do |current|
+      current_value = fixed_array.get(current)
+      fixed_array.set(current+1, current_value)
     end
 
     fixed_array.set(index, value)
     self.length += 1
-
     value
   end
 
