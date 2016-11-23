@@ -5,7 +5,7 @@ class FixedArray
   extend Reporter
   attr_reader :size
 
-  track def initialize(size)
+  def initialize(size)
     @size = size
     @contents = []
   end
