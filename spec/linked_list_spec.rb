@@ -106,10 +106,9 @@ describe LinkedList do
     end
 
     it "can insert at the front of the list even if the list is empty" do
-      empty_list = LinkedList.new
       empty_list.insert(0, "hello")
-      expect(my_list.get(0)).to eq("hello")
-      expect(my_list.length).to eq(1)
+      expect(empty_list.get(0)).to eq("hello")
+      expect(empty_list.length).to eq(1)
     end
   end
 end
