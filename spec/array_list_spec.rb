@@ -104,5 +104,12 @@ describe ArrayList do
       expect(my_list.get(2)).to eq("thing_2")
       expect(my_list.get(3)).to eq("thing_3")
     end
+
+    it "can insert at the front of the list even if the list is empty" do
+      empty_list = ArrayList.new
+      empty_list.insert(0, "hello")
+      expect(my_list.get(0)).to eq("hello")
+      expect(my_list.length).to eq(1)
+    end
   end
 end
