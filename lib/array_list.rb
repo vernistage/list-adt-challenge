@@ -43,7 +43,6 @@ class ArrayList
 
     fixed_array.set(index, value)
     self.length += 1
-    puts "\n"
     value
   end
 
@@ -63,7 +62,6 @@ class ArrayList
   attr_writer :length
 
   def expand_array_capacity
-    puts "growing #{fixed_array.size} to #{fixed_array.size * 2}"
     new_array = FixedArray.new(fixed_array.size * 2)
 
     0.upto(last_index).each do |i|

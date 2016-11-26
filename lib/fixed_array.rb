@@ -11,13 +11,11 @@ class FixedArray
   end
 
   track def get(index)
-    puts "getting #{index}"
     raise_out_of_bounds(index) if out_of_bounds?(index)
     return contents[index]
   end
 
   track def set(index, value)
-    puts "setting #{index} to #{value}"
     raise_out_of_bounds(index) if out_of_bounds?(index)
     contents[index] = value
   end
