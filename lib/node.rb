@@ -9,6 +9,10 @@ class Node
     @next = nil
   end
 
+  track def element=(new_element)
+    @element = new_element
+  end
+
   track def next
     @next
   end
