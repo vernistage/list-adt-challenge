@@ -12,7 +12,9 @@ module Reporter
   def self.report_on(title)
     self.reset
     yield
-    puts "Report for \"#{title}\""
+    report_str = "Report for \"#{title}\""
+    puts report_str
+    puts "=" * report_str.length
     self.report
     puts ""
     self.reset
@@ -31,13 +33,13 @@ module Reporter
   end
 
   def self.total_opcount
-    self.opcounts.values.reduce(:+)
+    self.opcounts.values.reduce(:+) || 0
   end
 
   def self.report
     self.opcounts.each do |method, count|
-      puts "#{method}: #{count} operations"
+      puts "  #{method}: #{count} operations"
     end
-    puts "Total: #{self.total_opcount}"
+    puts "  Total Operations: #{self.total_opcount}"
   end
 end
