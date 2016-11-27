@@ -158,6 +158,27 @@ module Reports
     end
   end
 
+  def report_set_middle_element(size)
+     puts title_line("Testing setting middle element in list of size #{size}")
+     ll = LinkedList.new
+     size.times do
+       ll.insert(0, "test")
+     end
+
+     Reporter.report_on("LinkedList") do
+       ll.set(size/2, "test2")
+     end
+
+     al = ArrayList.new
+     size.times do
+       al.insert(0, "test")
+     end
+
+     Reporter.report_on("ArrayList") do
+       al.set(size/2, "test2")
+     end
+   end
+
   def report_growth(size)
     puts title_line("Testing growth of list from 0 to size #{size}")
 
