@@ -25,7 +25,7 @@ You might be wondering, if Ruby has to use a fixed-size array underneath, how ar
 ## The "List" Data Structure
 We're going to be studying two interesting data structures in this unit, and both are types of Lists. Typically the study of data structures does not assume you're in a user-friendly, high-level language like Ruby. In fact, the data structures we'll be studying assume you're working at a low-level, including the limitation that your arrays are _fixed_. We may be in Ruby, but to really understand these data structures we're going to pretend we don't have Ruby's standard Array, and instead only have fixed-size arrays.
 
-You've been provided with a class called [FixedArray](./lib/fixed_array.rb). FixedArray emulates in Ruby what a "true" array is like under the hood. In these challenges you are free to use FixedArray objects, but you cannot use Ruby's standard array (`[]`). You also aren't allowed to use Hash or Set.
+You've been provided with a class called `FixedArray` in `lib/fixed_array.rb`. FixedArray emulates in Ruby what a "true" array is like under the hood. In these challenges you are free to use FixedArray objects, but you cannot use Ruby's standard array (`[]`). You also aren't allowed to use Hash or Set.
 
 ## Abstract Data Types
 
