@@ -69,7 +69,7 @@ In this repository you'll find a branch called `reference-implementation`. Check
 
 ### Reference Implementations
 
-You'll find reference implementations of ArrayList and LinkedList in their respective files in `lib`. Compare your solution against these. What do you notice? Are the two implementations similar? If they differe, how do they differ? Even if your solution doesn't look like the reference implementation we've provided, chances are they're pretty similar.
+You'll find reference implementations of ArrayList and LinkedList in their respective files in `lib`. Compare your solution against these. What do you notice? Are the two implementations similar? If they differ, how do they differ? Even if your solution doesn't look like the reference implementation we've provided, chances are they're pretty similar.
 
 Spend some time familiarizing yourself with this code and understanding what it's doing. We'll be analyzing its performance in the next section, so understanding the reference code is crucial.
 
@@ -157,7 +157,7 @@ As we analyze the performance of `#last`, the thing to pay attention to is not a
 
 ArrayList is another story. It doesn't matter how many things are in the list, it always takes the same amount of time. Since we're curious about growth, we don't care if `ArrayList#last` takes one operation or ten operations, what's interesting is that it always takes the _same number_ of operations no matter how big the list is. In other words, the number of operations required by `ArrayList#last` stays constant as the list grows.
 
-It turns out there's language to describe the patterns we're seeing, it's known as "Big-O notation". Analyzing the "Big-O" of an algorithm is all about determining how the operations required by that algorithm will increase as the algorithm operates and larger and larger input.
+It turns out there's language to describe the patterns we're seeing, it's known as "Big-O notation". Analyzing the "Big-O" of an algorithm is all about determining how the operations required by that algorithm will increase as the algorithm operates on larger and larger input.
 
 When we look at Big-O, we don't worry about precisely how many operations are required when running an algorithm with a single input. When you hear "Big-O", think "Big Picture" — we're not worried about the specific operation count, we're interested in how that operation count _grows_ over time. That's why we had to run `#last` with different list sizes, it allowed us to see the big picture — how `#last` performed in each implementation as the lists got bigger.
 
