@@ -280,4 +280,10 @@ Let's try to look at O(log n) in more concrete terms. Many "divide an conquer" a
 
 Now, draw out a series of balanced binary trees, each bigger than the last. Figure out for yourself how many decisions a binary search would need to make to find an element at the bottom of each tree (remember, at each "node" in a tree, a binary search decides if it should keep searching _left_ or _right_ in the tree, ignoring the other piece of the tree at every step).
 
-Plot the number of decisions required against the size of each tree, much the same as you did in analyzing our lists. Do you see the picture that emerges? It should look something like the O(log n) curve below in the image above.
+Plot the number of decisions required against the size of each tree, much the same as you did in analyzing our lists. Do you see the picture that emerges? It should look something like the O(log n) curve in the image above.
+
+## Conclusion
+
+Congratulations, you've waded deep into some classic computer science topics. The ability to recognize the characteristics of the classic data structures underlying the tools you use everyday is a valuable one. You've been exposed to the List abstract data type, and now you can continue your studies by examining Sets, Maps, Graphs and Trees next. All of these ADTs have classic concrete implementations as well. For example, Sets have the Hash Set and Maps have the Hash Table. Even if you don't implement them or even fully understand them, it pays to know the Big-O of their operations. It will allow you to make informed decisions about your data structures when performance is a concern.
+
+The Big-O analysis experience you've picked up will serve you in your own code too. As you build systems, you'll be able to read through your code and recognize when you're building methods that are O(1), O(n), O(n^2) or something else entirely. Performance issues might not occur every day in your work as a programmer, but when they do you'll be better equipped to reason about them.
