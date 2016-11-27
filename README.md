@@ -197,35 +197,35 @@ Here are the scenarios:
 
 #### Insert at the front
 
-Insert a value at the _front_ of a list. Test this on my different sizes of lists. What is the Big-O of `ArrayList#insert` when inserting at the front of the list? What about `LinkedList#insert`?
+Insert a value at the _front_ of a list. Test this on many different sizes of lists. What is the Big-O of `ArrayList#insert` when inserting at the front of the list? What about `LinkedList#insert`?
 
 Do they differ? If so, why?
 
 #### Insert into the middle
 
-Insert in element in the _middle_ of a list. Test this on my different sizes of lists. What is the Big-O of `ArrayList#insert` when inserting in the middle of a list? What about `LinkedList#insert`?
+Insert in element in the _middle_ of a list. Test this on many different sizes of lists. What is the Big-O of `ArrayList#insert` when inserting in the middle of a list? What about `LinkedList#insert`?
 
 Do they differ? If so, why?
 
 #### Add an element to the end
 
-Add an element to the end of a list (`#add`). Test this on my different sizes of lists. What is the Big-O of `ArrayList#add`? And `LinkedList#add`?
+Add an element to the end of a list (`#add`). Test this on many different sizes of lists. What is the Big-O of `ArrayList#add`? And `LinkedList#add`?
 
 Do they differ? If so, why?
 
 #### Get the first element of a list
 
-Retrieve the first element of a list (`#first`). Test this on my different sizes of lists. What is the Big-O of `ArrayList#first`? `LinkedList#first`?
+Retrieve the first element of a list (`#first`). Test this on many different sizes of lists. What is the Big-O of `ArrayList#first`? `LinkedList#first`?
 
 Do they differ? If so, why?
 
 #### Set the first element of a list
 
-Create a list, then `#set` the first element of it to something different. Test this on my different sizes of lists. What is the Big-O of `Arraylist#set` and `LinkedList#set` when setting the first element of a list?
+Create a list, then `#set` the first element of it to something different. Test this on many different sizes of lists. What is the Big-O of `Arraylist#set` and `LinkedList#set` when setting the first element of a list?
 
 #### Set the middle element of a list
 
-Create a list, then `#set` the middle element in it to something different. Test this on my different sizes of lists. What is the Big-O of `Arraylist#set` and `LinkedList#set` when setting the _middle_ element of a list?
+Create a list, then `#set` the middle element in it to something different. Test this on many different sizes of lists. What is the Big-O of `Arraylist#set` and `LinkedList#set` when setting the _middle_ element of a list?
 
 #### Examine Growth
 
