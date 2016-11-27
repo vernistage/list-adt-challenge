@@ -163,16 +163,16 @@ When we look at Big-O, we don't worry about precisely how many operations are re
 
 _Note: It's highly encouraged that you go do a little reading on Big-O at some point during or after this unit. Don't rely on this challenge to give you everything you need!_
 
-Now that we have a sense of what Big-O is for, let's look at some common Big-O results:
+Now that we have a sense of what Big-O is for, let's look at some common Big-O terms:
 
 #### O(1)
 
-An algorithm that is "O of 1" is known as _constant time_. No matter how big the thing that algorithm is working with gets, it will always take thes ame amount of time.
+An algorithm that is "O of 1" is known as _constant time_. No matter how big the thing that algorithm is working with gets, it will always take the same amount of time.
 
-In our analysis we found that `ArrayList#last` is a constant time operation. This terminology is useful, because now we can say "`ArrayList#last` is O(1)" and other people will know immediately that `last` always takes the same amount of time no matter how big the list is.
+In our analysis above we found that `ArrayList#last` is a constant time operation. This terminology is useful, because now we can say "`ArrayList#last` is O(1)" and other people will know immediately that `last` always takes the same amount of time no matter how big the list is.
 
 #### O(n)
-An algorithm that is "O of n" performs in _linear time_. As the size of the input increases, the time required to process that input increases with it. Crucially, the time required to process inputs grows at the same rate the input does, which is why O(n) algorithms yield a straight line up and to the right when we visualize them.
+An algorithm that is "O of n" performs in _linear time_. As the size of the input increases, the time required to process that input increases with it. Crucially, the time required to process inputs always grows at the same rate, which is why O(n) algorithms yield a straight line up and to the right when we visualize them.
 
 In our analysis we found that `LinkedList#last` is O(n). Again, this short-hand is useful. If I tell you "`LinkedList#last` is O(n)" you now know that `#last` will slow down at a linear rate as the size of the LinkedList increases.
 
@@ -186,12 +186,14 @@ Now that we've dipped our toes in the Big-O analysis process, it's time to dive 
 
 For each of the scenarios below, do the following:
 
-  * Read the scenario to make sure you understand what you're analyzing
-  * Look at the code in the reference implementation that this scenario will exercise
-  * Decide what you thing the Big-O of the method being tested is and why _before_ you run any code.
+  * Read the scenario to make sure you understand what you're analyzing.
+  * Look at the code in the reference implementation that this scenario will "exercise.""
+  * Decide what you thing the Big-O of the method being tested is, and why, _before_ you run any code.
   * Write some test code to actually measure the operation counts in the scenario, and plot those counts on a graph like we did with `#last`. Do your results match your Big-O analysis in the previous step?
 
 An example of test code measuring `#last` is available in `analysis-example.rb`.
+
+Here are the scenarios:
 
 #### Insert at the front
 
