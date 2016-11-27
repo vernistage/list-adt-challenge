@@ -248,9 +248,9 @@ To keep us focused, we didn't get into O(n^2) or O(log n) as we analyzed our Lis
 #### O(n^2)
 An algorithm that is "O of n squared" experiences operation growth that accelerates over time. An O(n^2) method might mean a list of 2 would take 4 operations, a list of 3 would take 9 operations, and a list of 4 would take 16 operations. Notice that the operation count is not increasing linearly, it's accelerating.
 
-Unlike O(n), where the number of operations increases in a steady, straight line, O(n^2) algorithms increase on a curve.
+Visually O(n^2) algorithms increase on a curve, unlike the linear progression of O(n)
 
-A simple example of an O(n^2) algorithm is iterating through an array in a nested loop.
+A simple example of an O(n^2) algorithm is a nested loop like this:
 
 ```text
 # pseudocode
@@ -266,7 +266,7 @@ define loop_the_loop(size) {
 loop_the_loop(5)
 ```
 
-In the pseudocode above, each iteration of the outer loop will in turn trigger 5 iterations of the inner loop. This means `print` would run 5 times. With an input of 6 it would print 36 times, with 7 it would run 49 times, and so on.
+In the pseudocode above, each iteration of the outer loop will in turn trigger 5 iterations of the inner loop. This means `print` will run 25 times. With an input of 6 it would print 36 times, with 7 it would run 49 times, and so on.
 
 ##### Try it out
 
@@ -280,4 +280,10 @@ Let's try to look at O(log n) in more concrete terms. Many "divide an conquer" a
 
 Now, draw out a series of balanced binary trees, each bigger than the last. Figure out for yourself how many decisions a binary search would need to make to find an element at the bottom of each tree (remember, at each "node" in a tree, a binary search decides if it should keep searching _left_ or _right_ in the tree, ignoring the other piece of the tree at every step).
 
-Plot the number of decisions required against the size of each tree, much the same as you did in analyzing our lists. Do you see the picture that emerges? It should look something like the O(log n) curve below in the image above.
+Plot the number of decisions required against the size of each tree, much the same as you did in analyzing our lists. Do you see the picture that emerges? It should look something like the O(log n) curve in the image above.
+
+## Conclusion
+
+Congratulations, you've waded deep into some classic computer science topics. The ability to recognize the characteristics of the classic data structures underlying the tools you use everyday is a valuable one. You've been exposed to the List abstract data type, and now you can continue your studies by examining Sets, Maps, Graphs and Trees next. All of these ADTs have classic concrete implementations as well. For example, Sets have the Hash Set and Maps have the Hash Table. Even if you don't implement them or even fully understand them, it pays to know the Big-O of their operations. It will allow you to make informed decisions about your data structures when performance is a concern.
+
+The Big-O analysis experience you've picked up will serve you in your own code too. As you build systems, you'll be able to read through your code and recognize when you're building methods that are O(1), O(n), O(n^2) or something else entirely. Performance issues might not occur every day in your work as a programmer, but when they do you'll be better equipped to reason about them.
