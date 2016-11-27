@@ -248,9 +248,9 @@ To keep us focused, we didn't get into O(n^2) or O(log n) as we analyzed our Lis
 #### O(n^2)
 An algorithm that is "O of n squared" experiences operation growth that accelerates over time. An O(n^2) method might mean a list of 2 would take 4 operations, a list of 3 would take 9 operations, and a list of 4 would take 16 operations. Notice that the operation count is not increasing linearly, it's accelerating.
 
-Unlike O(n), where the number of operations increases in a steady, straight line, O(n^2) algorithms increase on a curve.
+Visually O(n^2) algorithms increase on a curve, unlike the linear progression of O(n)
 
-A simple example of an O(n^2) algorithm is iterating through an array in a nested loop.
+A simple example of an O(n^2) algorithm is a nested loop like this:
 
 ```text
 # pseudocode
@@ -266,7 +266,7 @@ define loop_the_loop(size) {
 loop_the_loop(5)
 ```
 
-In the pseudocode above, each iteration of the outer loop will in turn trigger 5 iterations of the inner loop. This means `print` would run 5 times. With an input of 6 it would print 36 times, with 7 it would run 49 times, and so on.
+In the pseudocode above, each iteration of the outer loop will in turn trigger 5 iterations of the inner loop. This means `print` will run 25 times. With an input of 6 it would print 36 times, with 7 it would run 49 times, and so on.
 
 ##### Try it out
 
