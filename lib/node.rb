@@ -2,11 +2,14 @@ require_relative 'reporter'
 
 class Node
   extend Reporter
-  attr_accessor :element
 
   def initialize(element)
     @element = element
     @next = nil
+  end
+
+  track def element
+    @element
   end
 
   track def element=(new_element)
