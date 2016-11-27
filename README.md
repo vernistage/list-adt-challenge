@@ -246,7 +246,7 @@ To keep us focused, we didn't get into O(n^2) or O(log n) as we analyzed our Lis
 ![big o chart](images/big-o.jpg)
 
 #### O(n^2)
-An algorithm that is "O of n squared" will require an ever-increasing number of operations as the input grows. An O(n^2) method might mean a list of 2 would take 4 operations, a list of 3 would take 9 operations, and a list of 4 would take 16 operations. Notice that the operation count is not increasing linearly, it's accelerating.
+An algorithm that is "O of n squared" experiences operation growth that accelerates over time. An O(n^2) method might mean a list of 2 would take 4 operations, a list of 3 would take 9 operations, and a list of 4 would take 16 operations. Notice that the operation count is not increasing linearly, it's accelerating.
 
 Unlike O(n), where the number of operations increases in a steady, straight line, O(n^2) algorithms increase on a curve.
 
