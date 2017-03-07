@@ -45,7 +45,7 @@ Sometimes we want to be able to insert an element into the middle of a list. Imp
 
 There's more list-related things to explore, so you're encouraged to bookmark this stretch for later instead of diving in right now.
 
-With that said, there are many strategies to grow your ArrayList, but they're not all created equal. Think about your own strategy, and whether it's optimal. You may interested to know that there is a growth strategy that will allow for [_amortized_ constant time](http://en.wikipedia.org/wiki/Amortized_analysis).
+With that said, there are many strategies to grow your ArrayList, but they're not all created equal. Think about your own strategy, and whether it's optimal. You may be  interested to know that there is a growth strategy that will allow for [_amortized_ constant time](http://en.wikipedia.org/wiki/Amortized_analysis).
 
 ### Amortized?
 
